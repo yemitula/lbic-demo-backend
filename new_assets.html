@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+  <meta charset="utf-8" />
+  <title>Create New Asset | LBIC Asset Portal Backend</title>
+  <meta name="description" content="app, web app, responsive, responsive layout, admin, admin panel, admin dashboard, flat, flat ui, ui kit, AngularJS, ui route, charts, widgets, components" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="libs/assets/animate.css/animate.css" type="text/css" />
+  <link rel="stylesheet" href="libs/assets/font-awesome/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="libs/assets/simple-line-icons/css/simple-line-icons.css" type="text/css" />
+  <link rel="stylesheet" href="libs/jquery/bootstrap/dist/css/bootstrap.css" type="text/css" />
+
+  <link rel="stylesheet" href="css/font.css" type="text/css" />
+  <link rel="stylesheet" href="css/app.css" type="text/css" />
+
+</head>
+<body>
+<div class="app app-header-fixed ">
+  
+
+    <!-- header -->
+  <header id="header" class="app-header navbar" role="menu">
+      <!-- navbar header -->
+      <div class="navbar-header bg-dark">
+        <button class="pull-right visible-xs dk" ui-toggle-class="show" target=".navbar-collapse">
+          <i class="glyphicon glyphicon-cog"></i>
+        </button>
+        <button class="pull-right visible-xs" ui-toggle-class="off-screen" target=".app-aside" ui-scroll="app">
+          <i class="glyphicon glyphicon-align-justify"></i>
+        </button>
+        <!-- brand -->
+        <a href style=" width: 30px; height: 12px; align-self: left; position: relative; top: 5px; left: 5px; animation-direction: "><img src="img/Logo1.png" alt="logo"/></a>
+        <!-- / brand -->
+      </div>
+      <!-- / navbar header -->
+
+      <!-- navbar collapse -->
+      <div class="collapse pos-rlt navbar-collapse box-shadow bg-white-only">
+        <!-- buttons -->
+        <div class="nav navbar-nav hidden-xs">
+          <a href="#" class="btn no-shadow navbar-btn" ui-toggle-class="app-aside-folded" target=".app">
+            <i class="fa fa-dedent fa-fw text"></i>
+            <i class="fa fa-indent fa-fw text-active"></i>
+          </a>
+        </div>
+        <!-- / buttons -->
+
+        <!-- link and dropdown -->
+        
+        <!-- / link and dropdown -->
+
+
+        <!-- nabar right -->
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+              <i class="icon-bell fa-fw"></i>
+              <span class="visible-xs-inline">Notifications</span>
+              <span class="badge badge-sm up bg-danger pull-right-xs">2</span>
+            </a>
+            <!-- dropdown -->
+            <div class="dropdown-menu w-xl animated fadeInUp">
+              <div class="panel bg-white">
+                <div class="panel-heading b-light bg-light">
+                  <strong>You have <span>2</span> notifications</strong>
+                </div>
+                <div class="list-group">
+                  <a href class="list-group-item">
+                    <span class="pull-left m-r thumb-sm">
+                      <img src="img/a3.jpg" alt="..." class="img-circle">
+                    </span>
+                    <span class="clear block m-b-none">
+                      Adebisi Adeyemi (Epson Courts) has submitted a support ticket<br>
+                      <small class="text-muted">10 minutes ago</small>
+                    </span>
+                  </a>
+                  <a href class="list-group-item">
+                    <span class="pull-left m-r thumb-sm">
+                      <img src="img/a0.jpg" alt="..." class="img-circle">
+                    </span>
+                    <span class="clear block m-b-none">
+                      Ademola Johnson (Mulliner Towers) added documents that need approval<br>
+                      <small class="text-muted">2 hours ago</small>
+                    </span>
+                  </a>
+                </div>
+                <div class="panel-footer text-sm">
+                  <a href class="pull-right"><i class="fa fa-cog"></i></a>
+                  <a href="#notes" data-toggle="class:show animated fadeInRight">See all the notifications</a>
+                </div>
+              </div>
+            </div>
+            <!-- / dropdown -->
+          </li>
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle clear" data-toggle="dropdown">
+              <span class="thumb-sm avatar pull-right m-t-n-sm m-b-n-sm m-l-sm">
+                <img src="img/deji.jpg" alt="...">
+                <i class="on md b-white bottom"></i>
+              </span>
+              <span class="hidden-sm hidden-md">Deji Ogunbadejo</span> <b class="caret"></b>
+            </a>
+            <!-- dropdown -->
+            <ul class="dropdown-menu animated fadeInRight w">
+              <li>
+                <a>Profile</a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a>Change Password</a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="signin.html">Logout</a>
+              </li>
+            </ul>
+            <!-- / dropdown -->
+          </li>
+        </ul>
+        <!-- / navbar right -->
+      </div>
+      <!-- / navbar collapse -->
+  </header>
+  <!-- / header -->
+
+
+    <!-- aside -->
+  <aside id="aside" class="app-aside hidden-xs bg-dark">
+      <div class="aside-wrap">
+        <div class="navi-wrap">
+
+          <!-- nav -->
+          <nav ui-nav class="navi clearfix">
+          <br>
+            <ul class="nav">
+              <li>
+                <a href="index.html">
+                  <span class="pull-right text-muted">
+                  </span>
+                  <i class="glyphicon glyphicon-stats icon text-primary-dker"></i>
+                  <span class="font-bold">Dashboard</span>
+                </a>
+              </li>
+
+              <li>
+                <a href class="auto">
+                  <span class="pull-right text-muted">
+                    <i class="fa fa-fw fa-angle-right text"></i>
+                    <i class="fa fa-fw fa-angle-down text-active"></i>
+                  </span>
+                  <i class="glyphicon glyphicon-th"></i>
+                  <span>Assets</span>
+                </a>
+                <ul class="nav nav-sub dk">
+                  <li class="nav-sub-header">
+                    <a href>
+                      <span>Assets</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="new_assets.html">
+                      <span>New Asset</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="asset_list.html">
+                      <span>Asset List</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href class="auto">
+                  <span class="pull-right text-muted">
+                    <i class="fa fa-fw fa-angle-right text"></i>
+                    <i class="fa fa-fw fa-angle-down text-active"></i>
+                  </span>
+                  <i class="glyphicon glyphicon-briefcase icon"></i>
+                  <span>Documents</span>
+                </a>
+                <ul class="nav nav-sub dk">
+                  <li class="nav-sub-header">
+                    <a href>
+                      <span>Documents</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href>
+                      <span>Awaiting Approval</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href class="auto">
+                  <span class="pull-right text-muted">
+                    <i class="fa fa-fw fa-angle-right text"></i>
+                    <i class="fa fa-fw fa-angle-down text-active"></i>
+                  </span>
+                  <i class="glyphicon glyphicon-phone icon"></i>
+                  <span>HelpDesk</span>
+                </a>
+                <ul class="nav nav-sub dk">
+                  <li class="nav-sub-header">
+                    <a href>
+                      <span>Helpdesk</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href>
+                      <span>Pending Tickets</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href>
+                      <span>All Tickets</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            <li>
+                <a href class="auto">
+                  <i class="glyphicon glyphicon-envelope icon"></i>
+                  <span>Messages</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+             <!--nav end> -->
+        </div>
+      </div>
+  </aside>
+  <!-- / aside -->
+
+
+  <!-- content -->
+  <div id="content" class="app-content" role="main">
+  	<div class="app-content-body ">
+	    
+
+<div class="bg-light lter b-b wrapper-md">
+  <h1 class="m-n font-thin h3">Create New Asset</h1>
+</div>
+<div class="wrapper-md" ng-controller="FormDemoCtrl">
+  <div class="row">
+    <div class="col-sm-9">
+      <div class="panel panel-default">
+        <div class="panel-heading font-bold">Basic Information</div>
+        <div class="panel-body">
+          <form role="form" action="asset_list.html">
+            <div class="form-group">
+              <label>Property Name</label>
+              <input type="text" class="form-control" placeholder="Property Name">
+            </div>
+            <div class="form-group">
+              <label>Blocks /Flat Nos</label>
+              <input type="text" class="form-control" placeholder="Blocks/ Flat Nos">
+            </div>
+            <div class="form-group">
+              <label>Street</label> 
+              <input type="text" class="form-control" placeholder="Street" required="*">
+            </div>
+            <div class="form-group">
+              <label>Area</label> 
+              <input type="text" class="form-control" placeholder="Area" required="*">
+            </div>
+
+           <div class="form-group">
+          <label>LCDA</label>
+            <select name="account" class="form-control">
+                    <option>Agbado / Oke-Odo</option>
+                    <option>Agboyi-Ketu</option>
+                    <option>Apapa Iganmu</option>
+                    <option>Ayobo Ipaja</option>
+                    <option>Badagry East</option>
+                    <option>Badagry West</option>
+                    <option>Bariga</option>
+                    <option>Coker/Aguda</option>
+                    <option>Egbe Idimu</option>
+                    <option>Ejigbo</option>
+                    <option>Eredo</option>
+                    <option>Eti-Osa East</option>
+                    <option>Iba</option>
+                    <option>Ifelodun</option>
+                    <option>Igando Ikotun </option>
+                    <option>Igbogbo/Bayeku</option>
+                    <option>Ijede</option> 
+                    <option>Ikorodu North</option>
+                    <option>Ikorodu West</option>
+                    <option>Ikosi Ejirin</option>
+                    <option>Ikosi-Isheri</option>
+                    <option>Ikoyi Obalende</option>
+                    <option>Imota</option>
+                    <option>Iru-Victoria Island</option>
+                    <option>Isolo</option>
+                    <option>Itire-Ikate </option>
+                    <option>Lagos Island East</option>
+                    <option>Lagos Island West </option>
+                    <option>Lekki</option>
+                    <option>Mosan Okunola</option>
+                    <option>Odi-Olowo/Ojuwoye</option>
+                    <option>Ojodu</option>
+                    <option>Ojokoro</option>
+                    <option>Onigbongbo</option>
+                    <option>Oriade</option>
+                    <option>Orile Agege</option>
+                    <option>Oto-Awori</option>
+                    <option>Yaba</option>
+            </select>
+        </div>
+        <div class="form-group">
+          <label>Local Government</label>
+            <select name="account" class="form-control">
+                    <option>Agege</option>
+                    <option>Ajeromi Ifelodun</option>
+                    <option>Apapa Iganmu</option>
+                    <option>Alimosho</option>
+                    <option>Amuwo Odofin</option>
+                    <option>Apapa</option>
+                    <option>Badagry</option>
+                    <option>Epe </option>
+                    <option>Eti-Osa</option>
+                    <option>Ibeju-Lekki</option>
+                    <option>Ifako Ijaiye</option>
+                    <option>Ikeja </option>
+                    <option>Ikorodu </option>
+                    <option>Kosefe </option>
+                    <option>Lagos Island</option>
+                    <option>Lagos Mainland </option>
+                    <option>Mushin</option>
+                    <option>Ojo</option> 
+                    <option>Oshodi/Isolo</option>
+                    <option>Somolu</option>
+                    <option>Surulere</option>
+            </select>
+        </div>
+        <div class="form-group">
+          <label>Year of Allocation</label>
+            <select name="account" class="form-control">
+                    <option>2017</option>
+                    <option>2016</option>
+                    <option>2015</option>
+                    <option>2014</option>
+                    <option>2013</option>
+                    <option>2012</option>
+                    <option>2011</option>
+              </select>
+             </div> 
+
+            <a href="asset_list.html"><button type="button" class="btn btn-default">Back to List</button></a>
+            <button type="submit" class="btn btn-success">Create Asset</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+	</div>
+  </div>
+  <!-- /content -->
+  
+  <!-- footer -->
+  <footer id="footer" class="app-footer" role="footer">
+    <div class="wrapper b-t bg-light">
+      <span class="pull-right">2.2.0 <a href ui-scroll="app" class="m-l-sm text-muted"><i class="fa fa-long-arrow-up"></i></a></span>
+      &copy; 2016 Copyright.
+    </div>
+  </footer>
+  <!-- / footer -->
+
+
+
+</div>
+
+<script src="libs/jquery/jquery/dist/jquery.js"></script>
+<script src="libs/jquery/bootstrap/dist/js/bootstrap.js"></script>
+<script src="js/ui-load.js"></script>
+<script src="js/ui-jp.config.js"></script>
+<script src="js/ui-jp.js"></script>
+<script src="js/ui-nav.js"></script>
+<script src="js/ui-toggle.js"></script>
+<script src="js/ui-client.js"></script>
+
+</body>
+</html>
